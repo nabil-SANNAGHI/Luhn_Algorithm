@@ -28,8 +28,12 @@ h2 {
 }
 
 p {
-    text-align: right;
-    margin-bottom: 0;
+    margin: 0;
+        text-align: left;
+    }
+    
+    p:not(.repo) {
+        font-size: 10px;
 }
 
 .input-container {
@@ -87,4 +91,13 @@ input:focus {
     overflow-x: auto;
     font-size: 14px;
     line-height: 1.5;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo {
+    flex: 1;
 }
