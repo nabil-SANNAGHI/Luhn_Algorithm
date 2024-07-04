@@ -93,7 +93,7 @@ function luhnCheck(cardNumber) {
           </pre>
         </div>
         <div className="footer">
-          <p className="repo">repository: <a href="https://github.com/nabil-SANNAGHI/Luhn_Algorithm/" target="_blank">https://github.com/nabil-SANNAGHI/Luhn_Algorithm/</a></p>
+          <p className="repo">repository: <a href="https://github.com/nabil-SANNAGHI/Luhn_Algorithm/" target="_blank" rel="noreferrer">https://github.com/nabil-SANNAGHI/Luhn_Algorithm/</a></p>
           <p>Created by: SANNAGHI Nabil</p>
         </div>
       </header>
