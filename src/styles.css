@@ -1,0 +1,90 @@
+.App {
+    text-align: center;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Arial", sans-serif;
+}
+
+.App-header {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    padding-right: 30px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.valid-icon,
+.invalid-icon {
+    position: absolute;
+    right: 16px;
+}
+
+.valid-icon {
+    color: green;
+}
+
+.invalid-icon {
+    color: red;
+}
+
+.luhn-algorithm {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.luhn-algorithm h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.luhn-algorithm pre {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
