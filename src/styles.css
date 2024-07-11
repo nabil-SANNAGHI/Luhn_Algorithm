@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .App-header {
@@ -61,7 +61,8 @@ input:focus {
 }
 
 .valid-icon,
-.invalid-icon {
+.invalid-icon,
+.card-type-icon {
     position: absolute;
     right: 16px;
 }
@@ -74,6 +75,12 @@ input:focus {
     color: red;
 }
 
+.card-type-icon {
+    right: 40px;
+    /* Adjust based on the size of your input */
+    font-size: 1.5em;
+    /* Adjust size as needed */
+}
 .luhn-algorithm {
     margin-top: 20px;
     text-align: left;
