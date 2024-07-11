@@ -132,8 +132,15 @@ function App() {
     const selectionStart = input.selectionStart;
     const selectionEnd = input.selectionEnd;
     const newValue = currentValue.substring(0, selectionStart) + cleanPaste + currentValue.substring(selectionEnd);
-    setCardNumber(formatCardNumber(newValue));
-    handleChange({ target: input });
+
+    // Update input value
+    setCardNumber(newValue);
+
+    // Calculate new cursor position at the end of pasted content
+    const newCursorPosition = selectionStart + cleanPaste.length;
+
+    // Trigger handleChange with updated value
+    handleChange({ target: { value: newValue, selectionStart: newCursorPosition, selectionEnd: newCursorPosition } });
   };
 
   const getCardTypeIcon = (cardType) => {
